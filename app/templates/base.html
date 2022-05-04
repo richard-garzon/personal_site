@@ -2,14 +2,26 @@
 <html>
     <head>
       <title>richard's website</title>
+      <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            display: table;
+        }
+
+        .info-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+      </style>
     </head>
-    <p style="text-align:left;">
-        richard's site
-        <span style="float:right;">
-            about
-        </span>
-    <hr>
-    <body>
+    <body style="background-color: #240252;">
         {% block content %}{% endblock %}
     </body>
 </html>

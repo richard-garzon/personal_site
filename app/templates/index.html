@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <p><a href='{{ conf.twitter_url }}'>twitter</a></p>
-    <p><a href='{{ conf.linkedin_url }}'>linkedin</a></p>
-    <p><a href='{{ conf.github_url }}'>github</a></p>
+    <div style="text-align:center;font-family:Courier New;" class="info-block">
+        <h1 style="color:#240252;font-size:64px;"><span style="background-color:white">richard garzón</span></h1>
+
+        <div style="font-size:24px;"> <p><a href="{{ conf.twitter_url }}">twitter</a></p>
+            <p><a href="{{ conf.linkedin_url }}">linkedin</a></p>
+            <p><a href="{{ conf.github_url }}">github</a></p>
+        </div
+    </div>
 {% endblock %}
