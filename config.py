@@ -1,4 +1,8 @@
 import os
+from dotenv import load_dotenv
+
+basedif = oss.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir,'.env'))
 
 class Config(object):
     TWITTER_URL = os.environ.get('TWITTER_URL') or 'http//twitter.com'
