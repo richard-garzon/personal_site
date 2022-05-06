@@ -14,21 +14,30 @@ hello there! you can email me at [insert my first name here] [at] [this domain]
 
         body {
             display: table;
+            background-color: #240252;
         }
 
         .info-block {
             text-align: center;
             display: table-cell;
             vertical-align: middle;
+            font-family: Courier New;
+        }
+
+        span {
+            background-color: white;
+            color:#240252;
+            font-size:64px;
         }
 
         a {
+            font-size: 24px;
             color: white;
         }
 
       </style>
     </head>
-    <body style="background-color: #240252;">
+    <body>
         {% block content %}{% endblock %}
     </body>
 </html>
